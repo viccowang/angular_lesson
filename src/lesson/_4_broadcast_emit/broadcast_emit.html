@@ -1,1 +1,40 @@
-broadcast emit
+<div class="be_wrapper">
+    <h3>Broadcast & emit Lesson</h3>
+    <hr>
+    <div ng-controller="broadcastEmitCtrl">
+    
+        <!-- Root 顶级-->
+        <h4>GrandParent:</h4>
+        <p>value: {{ value }}</p>
+        <input type="text" ng-model="grandParentInput">
+        <button type="button" class="btn btn-primary btn-sm" ng-click="broadcast()">Broadcast</button>
+        <button type="button" class="btn btn-danger btn-sm" ng-click="clear()">clear</button>
+
+    
+            <!-- parent 级-->
+            <div class="parent" ng-controller="parentCtrl">
+                <h4>Parent:</h4>
+                <p>value: {{ value }}</p>
+                <input type="text" ng-model="parentInput">
+                <button type="button" class="btn btn-primary btn-sm" ng-click="broadcast()">Broadcast</button>
+                <button type="button" class="btn btn-danger btn-sm" ng-click="clear()">clear</button>
+
+                    <!-- child 级-->
+                    <div class="child" ng-controller="childCtrl">
+                        <h4>Child:</h4>
+                        <p>value: {{ value }}</p>
+                        <input type="text" ng-model="childInput">
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="emit()">Emit</button>
+                        <button type="button" class="btn btn-danger btn-sm" ng-click="clear()">clear</button>
+                    </div>
+    
+            </div>
+    
+            <!-- parent 级 -->
+            <div class="parent" ng-controller="parentCtrl2">
+                <h4>Parent:</h4>
+                <p>value: {{ value }}</p>
+            </div>
+    
+    </div>
+</div>

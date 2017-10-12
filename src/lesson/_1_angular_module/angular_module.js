@@ -27,7 +27,7 @@ angularModule.factory('angularModuleService', ['$http', ($http) => {
 angularModule.directive('highlightFont', () => {
     return {
         restrict: 'AE',
-        link : function(scope, tElement, tAttrs){
+        link : (scope, tElement, tAttrs) => {
             tElement.css({
                 'font-size': '1.2rem',
                 'color' : '#FF0000'

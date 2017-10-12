@@ -44,8 +44,7 @@ promiseModule.controller('promiseCtrl', ['$scope','$q', '$timeout', ($scope, $q,
                 sexy: 'Female'
             });
         },5000);
-    })
-
+    });
 
 }]);
 

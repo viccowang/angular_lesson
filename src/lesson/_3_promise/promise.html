@@ -1,1 +1,24 @@
-Pormise
+<div ng-controller="promiseCtrl">
+
+    <h2>Promise Result:</h2>
+    <br>
+    <button class="btn btn-primary" ng-click="start();">Start</button>
+    <br>
+    <br>
+    <span ng-bind="tableData | json"></span>
+    <br>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th ng-repeat="(key, value) in tableData[0]">{{ key }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in tableData ">
+                <td ng-repeat="(key, value) in row">{{ value }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

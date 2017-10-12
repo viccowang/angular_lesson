@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uirouter from '@uirouter/angularjs';
 
+// bootstrap 4.0 beta css
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 // global css

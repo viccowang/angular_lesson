@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS 培训课件</title>
+</head>
+<body>
+<div class="page-wrapper">
+    <header>AngularJS 培训知识点 [AngularJS1.x Demo] / 中航讯</header>
+    <section class="main">
+        <section class="nav">
+            <ul>
+                <li ui-sref="angularModule" ui-sref-active="active">Angular Module</li>
+                <li ui-sref="angularJqueryModule" ui-sref-active="active">Angular & jQuery</li>
+                <li ui-sref="promiseModule" ui-sref-active="active">Promise</li>
+                <li ui-sref="broadcastEmitModule" ui-sref-active="active">Broadcast & emit</li>
+                <li ui-sref="directivesModule" ui-sref-active="active">Directives</li>
+            </ul>
+        </section>
+        <section class="content">
+            <ui-view></ui-view>
+        </section>
+    </section>
+</div>
+</body>
+</html>
